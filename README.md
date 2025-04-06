@@ -54,4 +54,4 @@ jarvis/
 ├── requirements.txt
 └── README.md
 ```
-created with ❤️ and passion.
+created with ❤️.
