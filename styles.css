@@ -1,0 +1,79 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.assistant-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.assistant-circle i {
+    font-size: 2rem;
+    color: white;
+}
+
+.voice-visualizer {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.command-history {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.message strong {
+    color: #0d6efd;
+}
+
+#startButton {
+    min-width: 200px;
+}
+
+.status-indicator {
+    min-height: 30px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}

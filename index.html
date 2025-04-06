@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis - Voice Assistant</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <div class="assistant-circle mb-3">
+                                <i class="bi bi-mic-fill"></i>
+                            </div>
+                            <h2 class="card-title">Jarvis</h2>
+                            <p class="text-muted">Your Voice Assistant</p>
+                        </div>
+
+                        <div class="voice-visualizer mb-4">
+                            <canvas id="visualizer" height="100"></canvas>
+                        </div>
+
+                        <div class="status-indicator text-center mb-4">
+                            <span id="status-text" class="badge bg-secondary">Click to Start</span>
+                        </div>
+
+                        <div class="command-history mb-4">
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <h5 class="card-title">Command History</h5>
+                                    <div id="history" class="history-content">
+                                        <!-- Command history will be populated here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button id="startButton" class="btn btn-primary btn-lg" >
+                                <i class="bi bi-mic"></i> Start Listening
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"> </script>
+</body>
+</html>
